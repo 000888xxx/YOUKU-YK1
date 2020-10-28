@@ -16,7 +16,7 @@ on:
 #编辑任意指定文件触发开始编译(去掉下面5个#开启,最下面一行是指定修改什么文件就触发编译,我现在是修改diy.config文件触发)
 #  push:
 #    branches:
-#      - patch-2
+#      - master
 #    paths:
 #      - 'diy.config'
 
@@ -38,7 +38,7 @@ on:
 
 env:
   REPO_URL: https://github.com/coolsnowwolf/lede 
-  REPO_BRANCH: patch-2
+  REPO_BRANCH: master
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: diy.config
   DIY_OP_SH: diy-lede.sh
